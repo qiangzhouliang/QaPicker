@@ -18,7 +18,7 @@ allprojects {
 }
 ```
 第二步，在项目的app模块下的build.gradle里加：
-lastestVersion = [![](https://jitpack.io/v/qiangzhouliang/QaPickers.svg)](https://jitpack.io/#qiangzhouliang/QALogUtil)
+lastestVersion = [![](https://jitpack.io/v/qiangzhouliang/QaPickers.svg)](https://jitpack.io/#qiangzhouliang/QaPickers)
 ```
 dependencies {
 	  implementation 'com.github.qiangzhouliang:QaPickers:$lastestVersion'
