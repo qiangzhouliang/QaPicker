@@ -8,7 +8,7 @@
 “app”是Sample；“android-pickers”是library 包括WheelPicker、SinglePicker、DatePicker、TimePicker、LinkagePicker、AddressPicker、NumberPicker、CarNumberPicker等。
 
 #### 远程加载JitPack包
-加载[![](https://jitpack.io/v/qiangzhouliang/QaPickers.svg)](https://jitpack.io/#qiangzhouliang/QaPickers)的仓库：
+加载[![](https://jitpack.io/v/qiangzhouliang/QaPicker.svg)](https://jitpack.io/#qiangzhouliang/QaPicker)的仓库：
 第一步，在项目根目录下的build.gradle里添加  `maven { url "https://jitpack.io" } `引用：
 ```
 allprojects {
@@ -18,10 +18,10 @@ allprojects {
 }
 ```
 第二步，在项目的app模块下的build.gradle里加：
-lastestVersion = [![](https://jitpack.io/v/qiangzhouliang/QaPickers.svg)](https://jitpack.io/#qiangzhouliang/QaPickers)
+lastestVersion = [![](https://jitpack.io/v/qiangzhouliang/QaPicker.svg)](https://jitpack.io/#qiangzhouliang/QaPicker)
 ```
 dependencies {
-	  implementation 'com.github.qiangzhouliang:QaPickers:$lastestVersion'
+	  implementation 'com.github.qiangzhouliang:QaPicker:$lastestVersion'
 }
 ```
 
