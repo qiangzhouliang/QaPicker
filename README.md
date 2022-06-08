@@ -2,14 +2,14 @@
 安卓选择器类库，包括日期及时间选择器（可设置范围）、单项选择器（可用于性别、职业、学历、星座等）、城市地址选择器（分省级、地级及县级）、数字选择器（可用于年龄、身高、体重、温度等）等……
 欢迎大伙儿在[Issues](https://github.com/addappcn/android-pickers/issues)提交你的意见或建议。
 欢迎Fork & Pull requests贡献您的代码，大家共同学习【android-pickers交流群 : 456738690】。
-[查看更新日志](https://github.com/addappcn/android-pickers/blob/master/ChangeLog.md)
+[查看更新日志](https://github.com/qiangzhouliang/QaPicker/blob/master/ChangeLog.md)
 
 
 # 安装
 “app”是Sample；“android-pickers”是library 包括WheelPicker、SinglePicker、DatePicker、TimePicker、LinkagePicker、AddressPicker、NumberPicker、CarNumberPicker等。
 
 #### 远程加载JitPack包
-加载[![](https://jitpack.io/v/addappcn/android-pickers.svg)](https://jitpack.io/#addappcn/android-pickers)的仓库：
+加载[![](https://jitpack.io/v/qiangzhouliang/QaPicker.svg)](https://jitpack.io/#qiangzhouliang/QaPicker)的仓库：
 第一步，在项目根目录下的build.gradle里添加  `maven { url "https://jitpack.io" } `引用：
 ```
 allprojects {
@@ -19,9 +19,10 @@ allprojects {
 }
 ```
 第二步，在项目的app模块下的build.gradle里加：
+lastestVersion = [![](https://jitpack.io/v/qiangzhouliang/QaPickers.svg)](https://jitpack.io/#qiangzhouliang/QALogUtil)
 ```
 dependencies {
-    implementation  'com.github.addappcn:android-pickers:2.0.0'
+	  implementation 'com.github.qiangzhouliang:QaPickers:$lastestVersion'
 }
 ```
 
