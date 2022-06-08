@@ -5,7 +5,7 @@
 
 
 # 安装
-“app”是Sample；“android-pickers”是library 包括WheelPicker、SinglePicker、DatePicker、TimePicker、LinkagePicker、AddressPicker、NumberPicker、CarNumberPicker等。
+“app”是Sample；“qapickers”是library 包括WheelPicker、SinglePicker、DatePicker、TimePicker、LinkagePicker、AddressPicker、NumberPicker、CarNumberPicker等。
 
 #### 远程加载JitPack包
 加载[![](https://jitpack.io/v/qiangzhouliang/QaPicker.svg)](https://jitpack.io/#qiangzhouliang/QaPicker)的仓库：
