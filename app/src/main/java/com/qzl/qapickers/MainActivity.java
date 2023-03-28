@@ -275,6 +275,8 @@ public class MainActivity extends BaseActivity {
         //启用权重 setWeightWidth 才起作用
         picker.setLabel("分");
         picker.setItemWidth(100);
+        picker.setLineSpacingMultiplier(3);
+
 //        picker.setWeightEnable(true);
 //        picker.setWeightWidth(1);
         picker.setOuterLabelEnable(true);

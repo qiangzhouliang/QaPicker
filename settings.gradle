@@ -3,6 +3,10 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        // JitPack 远程仓库：https://jitpack.io
+        maven { url 'https://jitpack.io' }
+        // MavenCentral 远程仓库：https://mvnrepository.com
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +14,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // JitPack 远程仓库：https://jitpack.io
+        maven { url 'https://jitpack.io' }
+        // MavenCentral 远程仓库：https://mvnrepository.com
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 }
 rootProject.name = "QaPicker"

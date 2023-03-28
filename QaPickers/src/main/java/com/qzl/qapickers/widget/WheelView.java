@@ -178,13 +178,13 @@ public class WheelView extends View {
     }
 
     /**
-     * 判断间距是否在1.0-2.0之间
+     * 判断间距是否在1.0-3.0之间
      */
     private void judgeLineSpace() {
         if (lineSpacingMultiplier < 1.2f) {
             lineSpacingMultiplier = 1.2f;
-        } else if (lineSpacingMultiplier > 2.0f) {
-            lineSpacingMultiplier = 2.0f;
+        } else if (lineSpacingMultiplier > 3.0f) {
+            lineSpacingMultiplier = 3.0f;
         }
     }
 

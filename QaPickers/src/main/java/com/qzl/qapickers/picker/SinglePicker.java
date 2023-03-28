@@ -42,6 +42,7 @@ public class SinglePicker<T> extends WheelPicker {
     private String selectedItem = "";
     private String label = "";
     private int itemWidth = ITEM_WIDTH_UNKNOWN;
+    private float lineSpacing = 0;
     public SinglePicker(Activity activity, T[] items) {
         this(activity, Arrays.asList(items));
     }
@@ -140,6 +141,16 @@ public class SinglePicker<T> extends WheelPicker {
     }
 
     /**
+     * 设置选项的宽(dp)
+     */
+    public void setLineSpacingMultiplier(float lineSpacing) {
+        this.lineSpacing = lineSpacing;
+        if (null != wheelView) {
+            wheelView.setLineSpacingMultiplier(lineSpacing);
+        }
+    }
+
+    /**
      * 设置滑动监听器
      */
     public void setOnSingleWheelListener(OnSingleWheelListener onSingleWheelListener) {
@@ -178,6 +189,7 @@ public class SinglePicker<T> extends WheelPicker {
         wheelView.setUnSelectedTextColor(textColorNormal);
         wheelView.setLineConfig(lineConfig);
         wheelView.setLayoutParams(wheelParams);
+        wheelView.setLineSpacingMultiplier(lineSpacing);
         wheelView.setOnItemPickListener(new OnItemPickListener<String>() {
             @Override
             public void onItemPicked(int i,String item) {
@@ -203,7 +215,7 @@ public class SinglePicker<T> extends WheelPicker {
                 wheelView.setLabel(label,false);
             }
         }
-        if (itemWidth != ITEM_WIDTH_UNKNOWN) {
+        else if (itemWidth != ITEM_WIDTH_UNKNOWN) {
             int width = ConvertUtils.toPx(activity, itemWidth);
             wheelView.setLayoutParams(new LinearLayout.LayoutParams(width, wheelView.getLayoutParams().height));
         }
